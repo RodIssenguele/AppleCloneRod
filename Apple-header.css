@@ -1,0 +1,272 @@
+
+header{
+  position: fixed;
+  z-index: 1000;
+  height: 50px;
+  background-color: rgba(22, 22, 23, 0.8);
+  justify-content: center;
+  top: 0;
+  right: 0;
+  left:0;
+  padding: 0;
+  margin: 0;
+}
+
+.nav{
+  display: flex;
+  justify-content:center;
+  background-color: rgba(22, 22, 23, 0.8);
+  color: white;
+  height: 50px;
+  font-size: 13px;
+  align-items: center;
+  
+ 
+  
+}
+
+.nav-list{
+  display:flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  white-space: nowrap;
+  gap:30px;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+}
+
+/*---------icon-buttons-style------------*/
+
+.apple-icon{
+  width: 40px;
+
+}
+.apple-icon-2{
+  width: 20px; 
+  will-change: transform;
+}
+.apple-icon-2:focus .apple-icon-2:active{
+  outline: 1px solid currentColor ; 
+  outline-offset: 1px; 
+}
+
+.icon-btn{
+  background-color: rgba(28, 28, 28, 0.15);
+  border: none;
+}
+
+.icon-btn:focus{
+  outline: none ; 
+}
+
+/*---------------------*/
+
+.nav-item{
+  text-decoration: none;
+  color:rgb(193, 193, 193);
+  margin:0;
+  padding:0;
+}
+
+li{
+  list-style-type:none;
+} 
+
+/* -------drop-down-menu-------*/ 
+
+.mega-drp-dwn{
+  display: none;
+  position:absolute;
+  background-color: var(--background-color-1);
+  z-index: 1000;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top:100%;
+  padding: 35px 0; 
+  
+  
+}
+
+.inner-drp-dwn{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 35px;
+}
+
+.has-drpdwn:focus-within .mega-drp-dwn {
+  display: block; 
+}
+
+.has-drpdwn:hover .mega-drp-dwn{
+  display:block;
+}
+
+.mega-drp-dwn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -15px;
+  width: 100%;
+  height: 15px;
+}
+
+.lst{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--a-color-primary);
+}
+
+
+.col-1 li{
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--a-color-primary);
+}
+
+.lst .lst-tlt{
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--text-color-4);
+  margin-bottom: 10px;
+}
+
+
+.col-1 .lst-dtl{
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--a-color-primary);
+  margin-top: 10px;
+}
+
+
+
+.has-drpdwn2:focus-within .mega-drp-dwn{
+  display:block;
+}
+/*------header-icon-search-btn-------*/
+
+.inner-drp-dwn2{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.ctn{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.apple-icon-3{
+  width: 30px; 
+}
+
+.src-src-bar{
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: var(--background-color-1);
+  outline: none;
+  font-size: 20px;
+}
+
+.src-src-bar:focus{
+  border: none;
+  outline: none;
+}
+
+.inner-drp-dwn2 ul li{
+  padding: 3px;
+}
+
+/*--------header-icon-bag-button-------*/
+
+.ctn-2{
+  display: block;
+  padding-bottom: 25px;
+}
+
+.ctn-2 h2{
+  padding-bottom: 10px;
+}
+.ctn-2 p a{
+  text-decoration: underline;
+  color: var(--text-color-5);
+}
+.ctn-2-h, .ctn-2-p{
+  text-align: justify;
+  color: black;
+}
+
+
+
+/*------- responsivenes -------*/
+
+
+/* big screen*/
+
+
+@media (min-width: 1025px){
+
+}
+
+/*laptop*/
+
+@media (max-width: 1024px){
+  .nav-list{
+    width: 100%;
+    gap: 18px;
+  }
+  .inner-drp-dwn{
+    gap:24px;
+  }
+}
+
+/*tablet*/
+
+@media (max-width: 768px){
+  .had-drpdwn{
+    display: none;
+  }
+  .nav-list{
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .inner-drp-dwn{
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+  }
+}
+
+/*phone*/
+
+@media (max-width: 480px){
+   .nav {
+    height: 48px; 
+  }
+
+  .mega-drp-dwn {
+    top: 48px;         
+  }
+
+  .inner-drp-dwn2 {
+    padding: 16px;
+  }
+
+  .src-src-bar {
+    width: 100%;
+  }
+}
+
