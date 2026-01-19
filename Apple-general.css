@@ -241,10 +241,10 @@ a{
     font-size: 1rem; 
   }
    .grid .presentation-div .name{ 
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .grid .presentation-div .description{  
-    font-size: 1rem;
+    font-size: 0.5rem;
   } 
   .grid .presentation-div{
     top: 0.80rem;
