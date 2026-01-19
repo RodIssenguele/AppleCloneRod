@@ -18,7 +18,9 @@ footer hr{
   margin: 0 auto; 
   padding: 0 5rem;
   
+  
 }
+
 
 
 .info-text p{
@@ -39,10 +41,6 @@ footer div ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-footer div p{
-  text-align: justify;
 }
 
 
@@ -69,10 +67,10 @@ footer div p{
 }
 
 /*tablet*/
-@media (max-width: 768px){
+@media (max-width: 950px){
  .info-position{
     width: 95%;
-    margin: 0; 
+    margin: 0 auto; 
     padding: 0.5rem;
   
   } 
@@ -88,5 +86,19 @@ footer div p{
 
 /*phone*/
 @media (max-width: 480px){
- 
+  
+  
+  .info-position{
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0.5rem;
+  
+  } 
+ .more-list{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .more-list .ft-li-2{
+    display: none;
+  }
 }

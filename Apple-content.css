@@ -101,7 +101,7 @@
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 30rem 30rem 30rem;
+  grid-template-rows: 1fr 1fr;
   column-gap: 10px;
   row-gap: 10px;
   margin: 0 10px;
@@ -118,7 +118,7 @@
   justify-content: flex-start;
   align-items: center;
   background-color: var(--background-color-1);
-  padding-top: 175px;
+  padding-top: 200px;
 
 }
 
@@ -126,7 +126,7 @@
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 550px;
 }
 
 .block-1 .presentation-div .btn-buy{
@@ -266,8 +266,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--text-color-primary);
-  padding-top: 175px;
+  background-color: rgb(254, 254, 254);
+  padding-top: 220px;
  
 }
 
@@ -275,7 +275,7 @@
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 400px;
  
 }
 
@@ -310,7 +310,7 @@
   position:relative;
   height: auto;
   width: 100%;
-  max-width: 450px;
+  max-width: 350px;
 }
 
 
@@ -390,7 +390,6 @@
 .slide{
   flex: 0 0 auto;
   width: 65vw;
-  /*width: min(1050px, 92vw);*/
   height: auto;
   overflow: hidden;
   transition: transform 300ms ease;
@@ -422,7 +421,7 @@
 }
 
 /*tablet*/
-@media (max-width: 768px){
+@media (max-width: 950px){
   .grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -444,6 +443,22 @@
 }
 /*phone*/
 @media (max-width: 480px){
+   .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
  
+  .slide{
+    width: 100vw;
+    height: auto;
+   
+  }  
+  
+  .section-presentation h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  
+}
  
 }

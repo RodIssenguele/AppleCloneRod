@@ -49,7 +49,7 @@ main{
 
 }
 
-image{
+img{
   max-width: 100%;
   height: auto;
   display: block;
@@ -193,13 +193,7 @@ a{
 }
 
 /*tablet*/
-@media (max-width: 768px){
-
-}
-
-/*phone*/
-@media (max-width: 480px){
-
+@media (max-width: 950px){
   .img-div{
     margin-top: 0.35rem;
     width: 60%;
@@ -228,6 +222,41 @@ a{
   .btn{
     padding: 0.25rem 0.5rem;
     font-size: 0.45rem;
+    
+  }
+}
+
+
+/*phone*/
+@media (max-width: 480px){
+ .img-div{
+    margin-top: 0.40rem;
+    width: 60%;
+  }
+
+  .section-1 .name, .section-2 .name{
+    font-size: 2rem; 
+  }
+  .section-1 .description, .section-2 .description{ 
+    font-size: 1rem; 
+  }
+   .grid .presentation-div .name{ 
+    font-size: 2rem;
+  }
+  .grid .presentation-div .description{  
+    font-size: 1rem;
+  } 
+  .grid .presentation-div{
+    top: 0.80rem;
+    gap: 0.6rem;
+  }
+  .btn-div{
+    margin: 0 0 1.7rem 0;
+    gap: 0.5rem;
+  }
+  .btn{
+    padding: 0.rem 0.5rem;
+    font-size: 0.5rem;
     
   }
 }
