@@ -212,6 +212,25 @@ li{
 
 /*------- responsivenes -------*/
 
+/*----------hamburger menu-------------*/
+.nav-tggl{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  user-select: none;
+}
+
+.hamburger-icon{
+  display: block;
+}
+/*-----------------------------------*
+
 
 /* big screen*/
 
@@ -235,38 +254,36 @@ li{
 /*tablet*/
 
 @media (max-width: 768px){
-  .had-drpdwn{
+  .has-drpdwn{
     display: none;
   }
   .nav-list{
     width: 100%;
     justify-content: space-between;
     gap: 0;
+  } 
+  .nav {
+    height: 48px; 
+  }
+  .mega-drp-dwn {
+    top: 48px;         
   }
   .inner-drp-dwn{
     grid-template-columns: 1fr;
     gap: 16px;
     padding: 20px;
   }
+  .inner-drp-dwn2 {
+    padding: 16px;
+  }
+  .src-src-bar {
+    width: 100%;
+  }
 }
 
 /*phone*/
 
 @media (max-width: 480px){
-   .nav {
-    height: 48px; 
-  }
-
-  .mega-drp-dwn {
-    top: 48px;         
-  }
-
-  .inner-drp-dwn2 {
-    padding: 16px;
-  }
-
-  .src-src-bar {
-    width: 100%;
-  }
+  
 }
 

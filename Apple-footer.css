@@ -1,8 +1,8 @@
 footer{
   width: 100%;
   background-color: #1f1f1f;
-  padding: 30px 0;
-  font-size: 12px;
+  padding: 1.5rem 0;
+  font-size: 0.6rem;
 }
 
 footer hr{
@@ -14,8 +14,9 @@ footer hr{
 }
 
 .info-position{
-  width: min(1100px, 92%);
+  width: 100%;
   margin: 0 auto; 
+  padding: 0 5rem;
   
 }
 
@@ -30,7 +31,7 @@ footer hr{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto;
-  gap: 10px;
+  gap: 0.5rem;
   
 }
 
@@ -69,10 +70,23 @@ footer div p{
 
 /*tablet*/
 @media (max-width: 768px){
-
+ .info-position{
+    width: 95%;
+    margin: 0; 
+    padding: 0.5rem;
+  
+  } 
+ .more-list{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .more-list .ft-li-2{
+    display: none;
+  }
 }
+
 
 /*phone*/
 @media (max-width: 480px){
-
+ 
 }
