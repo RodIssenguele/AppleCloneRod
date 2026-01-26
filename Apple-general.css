@@ -82,10 +82,12 @@ a{
 }
 
 .img-div{
-  display: flex;
-  justify-content: center;
-  margin-top: 0.75rem;
+  display: block;
+  position: relative;
   width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .section-1 .name, .section-2 .name{
@@ -121,12 +123,18 @@ a{
   font-weight: 400;
 }
 
+
+/*    very important mistake here */
+/*  do not forget to check this   */
+/*   very important  under this text */
+
 .grid .presentation-div{
-  position: absolute;
+  position: relative; /*static;*/ /*absolute;*/
+  /*padding: 1rem 0;  ----------    */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  top: 1.5rem;
+  top: 1rem;
   gap: 1rem;
 }
 
