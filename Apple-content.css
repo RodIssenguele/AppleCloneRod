@@ -99,42 +99,44 @@
 
 .grid{
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   min-width: 0;
   column-gap: 10px;
   row-gap: 10px;
   margin: 0 10px;
   padding: 0;
+ 
 }
 
-/*----------------------*/
+
+.apple-icon-8{
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  display: block;
+}
+
+
 
 /*----- first block ------*/
 
-.block-1 {
-  position:relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  background-color: var(--background-color-1);
-  gap: 0;
-
+.b1 {
+  background-color: var(--background-color-2);
 }
 
 .airpods3-img{
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 250px;
 }
 
-.block-1 .presentation-div .btn-buy{
-  background-color: var(--background-color-1);
+.b1 .presentation-div .btn-buy{
+  background-color: var(--background-color-2);
 }
 
-.block-1 .presentation-div .btn-buy:hover{
+.b1 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -146,21 +148,15 @@
 
 /*------- second block -------*/
 
-.block-2{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  background-color: rgb(255,255,255);
-  gap: 0;
+.b2{
+  background-color: var(--background-color-4);
 }
 
 .ipadair-img{
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
 }
 
 .ipad-air-text-img{
@@ -171,11 +167,11 @@
 }
 
 
-.block-2 .presentation-div .btn-buy{
+.b2 .presentation-div .btn-buy{
   background-color: var(--background-color-2);
 }
 
-.block-2 .presentation-div .btn-buy:hover{
+.b2 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -187,35 +183,29 @@
 
 
 
-.block-3 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
+.b3 {
   background-color: var(--background-color-2);
-  gap: 0;
 }
 
 .apple-watch-11-img{
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
 }
 
 
-.block-3 .presentation-div .name{
+.b3 .presentation-div .name{
   gap: 8px;
   word-spacing: -5px;
 }
 
 
-.block-3 .presentation-div .btn-buy{
+.b3 .presentation-div .btn-buy{
   background-color: var(--background-color-2);
 }
 
-.block-3 .presentation-div .btn-buy:hover{
+.b3 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -227,30 +217,24 @@
 /*-------- fourth block --------*/
 
 
-.block-4 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
+.b4 {
   background-color: rgb(245, 245, 245);
-  gap: 0;
 }
 
 .new-ipad-img{
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
   bottom: 0;
 }
 
 
-.block-4 .presentation-div .btn-buy{
+.b4 .presentation-div .btn-buy{
   background-color: var(--text-color-primary);
 }
 
-.block-4 .presentation-div .btn-buy:hover{
+.b4 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -259,32 +243,25 @@
 
 /*--------------- fith block ----------------*/
 
-.block-5 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
+.b5 {
   background-color: rgb(254, 254, 254);
-   gap: 0;
- 
 }
 
 .trade-in-img{
   position: relative;
   height: auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
  
 }
 
 
-.block-5 .presentation-div .btn-buy{
+.b5 .presentation-div .btn-buy{
   width: max-content;
   background-color: var(--background-color-2);
 }
 
-.block-5 .presentation-div .btn-buy:hover{
+.b5 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -295,14 +272,8 @@
 /*-------------- sixth block ----------------*/
 
 
-.block-6 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
+.b6 {
   background-color: rgb(246, 246, 250);
-  gap: 0;
 }
 
 
@@ -310,16 +281,16 @@
   position:relative;
   height: auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 
-.block-6 .presentation-div .btn-buy{
+.b6 .presentation-div .btn-buy{
   width: max-content;
   background-color: rgb(246, 246, 250);
 }
 
-.block-6 .presentation-div .btn-buy:hover{
+.b6 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -332,7 +303,7 @@
 .slide-section{
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 0.25rem;
   margin-bottom: 55px;
 }
 
@@ -342,7 +313,7 @@
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: rgb(245, 245, 245);
+  background-color: var(--background-color-1);
   margin-bottom: 5px;
   padding-top: 2%;
 }
@@ -410,16 +381,6 @@
 /*------- responsivenes -------*/
 
 
-/* big screen*/
-@media (min-width: 1025px){
-
-}
-
-/*laptop*/
-@media (max-width: 1024px){
-
-}
-
 /*tablet*/
 @media (max-width: 950px){
   .grid{
@@ -427,6 +388,22 @@
     grid-template-columns: auto;
     grid-template-rows: auto;
     margin : 0;
+ 
+  }
+   .grid .img-div img{
+    max-height: 200px;
+    
+  }
+   .ipad-air-text-img{
+    width: 50%;
+  }
+
+  .b3 .presentation-div .name{
+    gap: 3px;
+  }
+
+  .apple-icon-8{
+    max-width: 35px;
   }
  
   .slide{
@@ -450,6 +427,21 @@
     grid-template-rows: auto;
     margin: 0;
   }
+ 
+
+  .grid .img-div img{
+    max-height: 170px;
+    
+  }
+  .ipad-air-text-img{
+    width: 40%;
+  }
+
+  .apple-icon-8{
+    max-width: 25px;
+  }
+
+
  
   .slide{
     width: 100vw;
