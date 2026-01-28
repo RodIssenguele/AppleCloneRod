@@ -37,6 +37,10 @@ footer hr{
   
 }
 
+.more-list ul li{
+  padding: 0.3rem;
+}
+
 footer div ul{
   list-style-type: none;
   margin: 0;
@@ -50,6 +54,11 @@ footer div ul{
 
 .more-list a, .info-position p{
   color: var(--text-color-2);
+}
+
+.info-position p a{
+  color: var(--btn-color-primary);
+  text-decoration: underline;
 }
 
 

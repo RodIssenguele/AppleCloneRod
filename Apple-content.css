@@ -121,7 +121,7 @@
 
 /*----- first block ------*/
 
-.b1 {
+.block1 {
   background-color: var(--background-color-2);
 }
 
@@ -132,11 +132,11 @@
   max-width: 250px;
 }
 
-.b1 .presentation-div .btn-buy{
+.block1 .presentation-div .btn-buy{
   background-color: var(--background-color-2);
 }
 
-.b1 .presentation-div .btn-buy:hover{
+.block1 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -148,7 +148,7 @@
 
 /*------- second block -------*/
 
-.b2{
+.block2{
   background-color: var(--background-color-4);
 }
 
@@ -167,11 +167,11 @@
 }
 
 
-.b2 .presentation-div .btn-buy{
+.block2 .presentation-div .btn-buy{
   background-color: var(--background-color-2);
 }
 
-.b2 .presentation-div .btn-buy:hover{
+.block2 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -183,7 +183,7 @@
 
 
 
-.b3 {
+.block3 {
   background-color: var(--background-color-2);
 }
 
@@ -195,17 +195,17 @@
 }
 
 
-.b3 .presentation-div .name{
+.block3 .presentation-div .name{
   gap: 8px;
   word-spacing: -5px;
 }
 
 
-.b3 .presentation-div .btn-buy{
+.block3 .presentation-div .btn-buy{
   background-color: var(--background-color-2);
 }
 
-.b3 .presentation-div .btn-buy:hover{
+.block3 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -217,7 +217,7 @@
 /*-------- fourth block --------*/
 
 
-.b4 {
+.block4 {
   background-color: rgb(245, 245, 245);
 }
 
@@ -230,11 +230,11 @@
 }
 
 
-.b4 .presentation-div .btn-buy{
+.block4 .presentation-div .btn-buy{
   background-color: var(--text-color-primary);
 }
 
-.b4 .presentation-div .btn-buy:hover{
+.block4 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -243,7 +243,7 @@
 
 /*--------------- fith block ----------------*/
 
-.b5 {
+.block5 {
   background-color: rgb(254, 254, 254);
 }
 
@@ -256,12 +256,12 @@
 }
 
 
-.b5 .presentation-div .btn-buy{
+.block5 .presentation-div .btn-buy{
   width: max-content;
   background-color: var(--background-color-2);
 }
 
-.b5 .presentation-div .btn-buy:hover{
+.block5 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -272,7 +272,7 @@
 /*-------------- sixth block ----------------*/
 
 
-.b6 {
+.block6 {
   background-color: rgb(246, 246, 250);
 }
 
@@ -285,12 +285,12 @@
 }
 
 
-.b6 .presentation-div .btn-buy{
+.block6 .presentation-div .btn-buy{
   width: max-content;
   background-color: rgb(246, 246, 250);
 }
 
-.b6 .presentation-div .btn-buy:hover{
+.block6 .presentation-div .btn-buy:hover{
   background-color: var(--btn-color-primary);
   color: var(--text-color-primary);
 }
@@ -364,6 +364,7 @@
   height: auto;
   overflow: hidden;
   transition: transform 300ms ease;
+  aspect-ratio: 16 / 9;
 
 }
 

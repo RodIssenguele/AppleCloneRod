@@ -50,7 +50,7 @@ header{
   width: 1rem; 
   will-change: transform;
 }
-.apple-icon-2:focus .apple-icon-2:active{
+.apple-icon-2:focus, .apple-icon-2:active{
   outline: 1px solid currentColor; 
   outline-offset: 1px; 
 }
